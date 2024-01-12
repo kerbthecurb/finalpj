@@ -2,12 +2,29 @@
 <html lang="en">
 <head>
   <!-- Design by foolishdeveloper.com -->
-    <title>Login</title>
- 
+    <title>Sign up</title>
+  
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
     <!--Stylesheet-->
+    <script>
+        
+function signup() {
+    const username = document.getElementById("Username").value;
+    const password = document.getElementById("Password").value;
+    if (username.trim() === "" || password.trim() === "") {
+        alert("Vui lòng điền đầy đủ tên người dùng và mật khẩu.");
+        return;
+    }
+    localStorage.setItem("username", username);
+    localStorage.setItem("password", password);
+    window.location.href = '../html/landing.html';
+
+   
+}
+
+    </script>
     <style media="screen">
       *,
 *:before,
@@ -114,35 +131,30 @@ button{
     </style>
 </head>
 <body>
+    <h1>Sign Up</h1>
+    <!-- <form>
+       
+
+        <label for="username">Username</label>
+        <input type="text" placeholder="Email or Phone" id="username">
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password">
+
+        <button type="button" onclick="signup()">Sign Up!</button>
     
+    </form> -->
     <form>
-        <label for="Username">Tên người dùng:</label>
+        <label for="Username">SUername</label>
         <input type="text" id="Username" required>
         <br>
         <label for="Password">Mật khẩu:</label>
         <input type="password" id="Password" required>
         <br>
-        <button type="button" onclick="login()">Đăng ký</button>
+        <button type="button" onclick="signup()">Đăng ký</button>
     </form>
-<script>
-    function login() {
-    // Lấy giá trị từ trường tên người dùng và mật khẩu
-    const username = document.getElementById("Username").value;
-    const password = document.getElementById("Password").value;
 
-    // Lấy thông tin từ Local Storage
-    const storedUsername = localStorage.getItem("username");
-    const storedPassword = localStorage.getItem("password");
-
-    // Kiểm tra tên người dùng và mật khẩu
-    if (username === storedUsername && password === storedPassword) {
-        alert("Đăng nhập thành công!");
-        // Thực hiện chuyển hướng đến trang chính hoặc trang khác
-        window.location.href = "../html/landing.html";
-    } else {
-        alert("Tên người dùng hoặc mật khẩu không chính xác!");
-    }
-}
-</script>
+<!-- <script src="../js/signup.js"></script> -->
+<script src="../js/signup.js"></script>
 </body>
 </html>
