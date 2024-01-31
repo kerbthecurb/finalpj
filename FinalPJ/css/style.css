@@ -1,4 +1,7 @@
-
+*{
+    text-decoration: none;
+    color: black;
+}
 .title{
     text-align: center;
 }
@@ -16,7 +19,7 @@
 
 h1{
     color: black;
-    padding-left: 650px;
+    padding-left: 450px;
     padding-top:30px;
     font-size: 60px;
     font-family: Georgia, sans-serif;
@@ -63,6 +66,10 @@ h1{
     color: black;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 35px;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    display: flex;
 
 }
   
@@ -76,12 +83,11 @@ h1{
   }
 
 .card h4{
-    padding-left: 65px;
+    text-align: center;
 }
 
 .card p{
-    padding-left: 135px;
-    padding-bottom: 10px;
+    text-align: center;
 }
 
 .cards{

@@ -4,115 +4,239 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<link rel="stylesheet" href="../css/style.css">
-<link rel="stylesheet" href="../css/taskbar.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/taskbar.css">
 </head>
 <body>
-<!DOCTYPE html><html class="menu">
-<html>
-
+<!DOCTYPE html>
+<html class="menu">
 <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content=="IE=edge"/>
+    <meta name="google" value="notranslate"/>
+    <title>Side Menu</title>
+    <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-<meta charset="utf-8"/>
-<meta http-equiv="X-UA-Compatible" content=="IE=edge"/>
-<meta name="google" value="notranslate"/>
-<title>Side Menu</title>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
 
+        h1 {
+            text-align: center;
+        }
 
-<link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
 
+        li {
+            margin-bottom: 10px;
+        }
 
-  
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+
+        .cart-item img {
+            max-width: 100px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .cart-item .item-details {
+            flex-grow: 1;
+        }
+
+        .cart-item .item-details h2 {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .cart-item .item-details p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .empty-cart {
+            text-align: center;
+        }
+
+        .remove-button {
+            background: none;
+            border: none;
+            color: red;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .cart-item .remove-button {
+          background: none;
+          border: none;
+          color: red;
+          font-size: 24px;
+          font-weight: bold;
+          cursor: pointer;
+          margin-left: auto;
+}
+.right h1 {
+  padding-right: 400px;
+}
+    </style>
 </head>
-
 <body>
 <div class="controller">
   <nav class="main-menu">
     <div>
-        
-        <img src="../images/nanamin.jpg" alt="">
-    
-      </div> 
+
+      <img src="../images/nanamin.jpg" alt="">
+
+    </div>
     <div class="settings"></div>
     <div class="scrollbar" id="style-1">
-          
-    <ul>
-      
-    <li>                                   
-    <a href="./landing.html">
-    <i class="fa fa-home fa-lg"></i>
-    <span class="nav-text">Home</span>
-    </a>
-    </li>   
-      
-    <li>                                 
-    <a href="./login.html">
-    <i class="fa fa-user fa-lg"></i>
-    <span class="nav-text">Login</span>
-    </a>
-    </li>   
 
-        
-    <li>                                 
-    <a href="./store.html">
-    <i class="fa fa-shopping-cart"></i>
-    <span class="nav-text">Shop</span>
-    </a>
-    </li>   
-                      
+      <ul>
 
-      
-      
-    </li>
-    <li class="darkerlishadow">
-    <a href="./cart.html">
-    <i class="fa fa-shopping-cart"></i>
-    <span class="nav-text">Your Cart</span>
-    </a>
-    </li>
-      
-    <li class="darkerli">
-    <a href="./showroom/pictures.html">
-    <i class="fa fa-picture-o fa-lg"></i>
-    <span class="nav-text">Photos</span>
-    </a>
-    </li>
-      
-    <li class="darkerli">
-    <a href="./showroom/paintings.html">
-    <i class="fa fa-picture-o fa-lg"></i>
-    <span class="nav-text">Paintings</span>
-    </a>
-    </li>
+        <li>
+          <a href="./landing.html">
+            <i class="fa fa-home fa-lg"></i>
+            <span class="nav-text">Home</span>
+          </a>
+        </li>
 
-    <li class="darkerli">
-        <a href="http://startific.com">
+        <li>
+          <a href="./login.html">
+            <i class="fa fa-user fa-lg"></i>
+            <span class="nav-text">Login</span>
+          </a>
+        </li>
+
+
+        <li>
+          <a href="./store.html">
+            <i class="fa fa-shopping-cart"></i>
+            <span class="nav-text">Shop</span>
+          </a>
+        </li>
+
+
+
+
+        </li>
+        <li class="darkerlishadow">
+          <a href="./cart.html">
+            <i class="fa fa-shopping-cart"></i>
+            <span class="nav-text">Your Cart</span>
+          </a>
+        </li>
+
+        <li class="darkerli">
+          <a href="./paintings.html">
+            <i class="fa fa-picture-o fa-lg"></i>
+            <span class="nav-text">Photos</span>
+          </a>
+        </li>
+
+        <li class="darkerli">
+          <a href="./paintings.html">
+            <i class="fa fa-picture-o fa-lg"></i>
+            <span class="nav-text">Paintings</span>
+          </a>
+        </li>
+
+        <li class="darkerli">
+          <a href="http://startific.com">
             <i class="fa fa-question-circle fa-lg"></i>
             <span class="nav-text">Help</span>
-            </a>
-    </li>
-
+          </a>
+        </li>
       
-    </ul>
 
+
+      </ul>
+
+    </div>
+  </nav>
+    <div class="right">
+        <h1>Shopping Cart</h1>
+        <div id="cart-items">
+            <ul>
+                <!-- The cart items will be dynamically added here -->
+            </ul>
+        </div>
+        <script>
+            // Retrieve cart items from local storage
+            const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // Display cart items in the list
+            function displayCartItems() {
+                const cartItemsContainer = document.getElementById('cart-items');
+                const ul =cartItemsContainer.querySelector('ul');
+
+                // Clear existing list items
+                ul.innerHTML = '';
+
+                if (cartItems.length === 0) {
+                    const emptyCartMsg = document.createElement('p');
+                    emptyCartMsg.classList.add('empty-cart');
+                    emptyCartMsg.textContent = 'Your cart is empty.';
+                    ul.appendChild(emptyCartMsg);
+                } else {
+                    cartItems.forEach((item, index) => {
+                        const li = document.createElement('li');
+                        li.classList.add('cart-item');
+
+                        const image = document.createElement('img');
+                        image.src = item.image;
+                        image.alt = item.name;
+                        li.appendChild(image);
+
+                        const itemDetails = document.createElement('div');
+                        itemDetails.classList.add('item-details');
+
+                        const itemName = document.createElement('h2');
+                        itemName.textContent = item.name;
+                        itemDetails.appendChild(itemName);
+
+                        const itemPrice = document.createElement('p');
+                        itemPrice.textContent = 'Price: $' + item.price.toFixed(2);
+                        itemDetails.appendChild(itemPrice);
+
+                        const removeButton = document.createElement('button');
+                        removeButton.classList.add('remove-button');
+                        removeButton.innerHTML = '&times;';
+                        removeButton.addEventListener('click', () => {
+                            removeItemFromCart(index);
+                        });
+                        itemDetails.appendChild(removeButton);
+
+                        li.appendChild(itemDetails);
+
+                        ul.appendChild(li);
+                    });
+                }
+            }
+
+            // Remove item from cart and update local storage
+            function removeItemFromCart(index) {
+                cartItems.splice(index, 1);
+                localStorage.setItem('cart', JSON.stringify(cartItems));
+                displayCartItems();
+            }
+
+            // Display initial cart items
+            displayCartItems();
+        </script>
+    </div>
 </div>
-</nav>
-<div class="right">
-  insert table here
-</div>
-</div>
-
-
-
-
-
-
-   
-  
-  
-</body>
-
-
-</html>
 </body>
 </html>
